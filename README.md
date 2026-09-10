@@ -1,6 +1,6 @@
 # Threshold Illustrations
 
-Illustrative models of how implementation diversity affects **signing safety** and **consensus liveness** in a **7-of-10 federation**, comparing hardening effort for one, two, and four codebases, plus a fixed-high-effort comparison across one to ten codebases.
+Illustrative models of how implementation diversity affects **signing safety** and **consensus liveness**: two hardening-effort charts for a **7-of-10 federation**, plus a **large-federation** implementation-count comparison with a Bitcoin majority-hashpower reference.
 
 **These are hypothetical probabilities, not security or reliability estimates for Fedimint or any deployed system.**
 
@@ -34,7 +34,7 @@ The liveness model assumes bugs stall nodes or make them refuse to vote. Four un
 
 ![Safety and liveness vs. implementation count](implementation-count.png)
 
-A fixed **20-unit total hardening budget** is divided across **1–10 implementations**, with ten nodes allocated as evenly as possible. Both curves show failure probabilities; lower is better. The vertical axis is logarithmic. This uses the existing charts' high-effort endpoint, not infinite effort.
+A fixed **20-unit total hardening budget** is divided across **1–10 implementations** in a large federation: **n = 3f+1**, **quorum = 2f+1 ≈ ⅔**, with f = 1,000,000 and near-equal codebase shares. A third line shows a **Bitcoin-style >50% hashpower-control reference**, not key theft or actual Bitcoin attack probability. All three curves use the same toy risk parameters and a logarithmic vertical axis. This is finite high effort, not infinite effort; exact integer thresholds are retained.
 
 [SVG](implementation-count.svg) · [Data](implementation-count.csv) · [Model and limitations](implementation-count-model.md) · [Generator](implementation_count.py)
 
@@ -48,7 +48,7 @@ A fixed **20-unit total hardening budget** is divided across **1–10 implementa
 - Thus these are **not** models of unconditionally independent 1% implementation failures.
 - Implementation startup costs, unequal codebase quality and interoperability regressions are excluded. The liveness chart models quorum loss, not every consensus bug or outage duration.
 
-The identical parameters make the two mechanisms easier to compare; they do not imply that real safety and liveness bug rates are equal. See the model notes for formulas and limitations.
+The identical parameters make threshold effects easier to compare; they do not imply that real safety, liveness and Bitcoin mining bug rates are equal. See the model notes for formulas and limitations.
 
 ## Regenerate
 
@@ -64,4 +64,4 @@ magick -background '#f8fafb' consensus-liveness.svg consensus-liveness.png
 magick -background '#f8fafb' implementation-count.svg implementation-count.png
 ```
 
-Each Python script checks exhaustive failure-state enumeration against closed-form probabilities or an independent convolution, validates model invariants, and writes its SVG and CSV alongside itself. The implementation-count generator also checks agreement with the companion CSVs at total effort E=20. PNG appearance can vary with renderer and installed fonts; the SVG requests DejaVu Sans.
+Each Python script checks exhaustive failure-state enumeration against closed-form probabilities or an independent convolution, validates model invariants, and writes its SVG and CSV alongside itself. The implementation-count generator also checks the unchanged one-, two-, and four-implementation federation cases against the companion CSVs at total effort E=20. PNG appearance can vary with renderer and installed fonts; the SVG requests DejaVu Sans.

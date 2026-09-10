@@ -2,24 +2,26 @@
 <rect width="1700" height="1020" fill="#f8fafb"/>
 <g font-family="DejaVu Sans, sans-serif">
 <text x="72" y="93" font-size="47" fill="#1b2935" font-weight="bold" text-anchor="start">Safety &amp; Liveness vs. Implementation Count</text>
-<text x="72" y="140" font-size="23" fill="#576875" font-weight="normal" text-anchor="start">7-of-10 federation · high total effort fixed at 20 units, split equally across codebases.</text>
+<text x="72" y="140" font-size="23" fill="#576875" font-weight="normal" text-anchor="start">Large federation: n = 3f + 1, quorum = 2f + 1 ≈ ⅔ · fixed total effort: 20 units.</text>
 <text x="130" y="211" font-size="24" fill="#1b2935" font-weight="bold" text-anchor="start">Failure probability · log scale · lower is better</text>
 <line x1="130" y1="250" x2="165" y2="250" stroke="#b84e34" stroke-width="4" stroke-dasharray=""/>
-<text x="180" y="257" font-size="20" fill="#b84e34" font-weight="normal" text-anchor="start">Fund safety: unauthorized signing</text>
-<line x1="650" y1="250" x2="685" y2="250" stroke="#326bb2" stroke-width="4" stroke-dasharray=""/>
-<text x="700" y="257" font-size="20" fill="#326bb2" font-weight="normal" text-anchor="start">Liveness: quorum halt</text>
+<text x="180" y="257" font-size="20" fill="#b84e34" font-weight="normal" text-anchor="start">Federation: fund safety</text>
+<line x1="130" y1="285" x2="165" y2="285" stroke="#326bb2" stroke-width="4" stroke-dasharray=""/>
+<text x="180" y="292" font-size="20" fill="#326bb2" font-weight="normal" text-anchor="start">Federation: liveness</text>
+<line x1="640" y1="250" x2="675" y2="250" stroke="#a96b08" stroke-width="4" stroke-dasharray=""/>
+<text x="690" y="257" font-size="20" fill="#a96b08" font-weight="normal" text-anchor="start">Bitcoin: &gt;50% hashpower</text>
 <line x1="130" y1="738.0" x2="1020" y2="738.0" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
 <text x="112" y="745.0" font-size="20" fill="#576875" font-weight="normal" text-anchor="end">0.01%</text>
-<line x1="130" y1="647.1801888888851" x2="1020" y2="647.1801888888851" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
-<text x="112" y="654.1801888888851" font-size="20" fill="#576875" font-weight="normal" text-anchor="end">0.03%</text>
-<line x1="130" y1="547.650460521871" x2="1020" y2="547.650460521871" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
-<text x="112" y="554.650460521871" font-size="20" fill="#576875" font-weight="normal" text-anchor="end">0.1%</text>
-<line x1="130" y1="456.83064941075617" x2="1020" y2="456.83064941075617" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
-<text x="112" y="463.83064941075617" font-size="20" fill="#576875" font-weight="normal" text-anchor="end">0.3%</text>
-<line x1="130" y1="357.300921043742" x2="1020" y2="357.300921043742" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
-<text x="112" y="364.300921043742" font-size="20" fill="#576875" font-weight="normal" text-anchor="end">1%</text>
-<line x1="130" y1="300.0" x2="1020" y2="300.0" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
-<text x="112" y="307.0" font-size="20" fill="#576875" font-weight="normal" text-anchor="end">2%</text>
+<line x1="130" y1="652.363968061894" x2="1020" y2="652.363968061894" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
+<text x="112" y="659.363968061894" font-size="20" fill="#576875" font-weight="normal" text-anchor="end">0.03%</text>
+<line x1="130" y1="558.5151602637734" x2="1020" y2="558.5151602637734" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
+<text x="112" y="565.5151602637734" font-size="20" fill="#576875" font-weight="normal" text-anchor="end">0.1%</text>
+<line x1="130" y1="472.8791283256673" x2="1020" y2="472.8791283256673" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
+<text x="112" y="479.8791283256673" font-size="20" fill="#576875" font-weight="normal" text-anchor="end">0.3%</text>
+<line x1="130" y1="379.0303205275467" x2="1020" y2="379.0303205275467" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
+<text x="112" y="386.0303205275467" font-size="20" fill="#576875" font-weight="normal" text-anchor="end">1%</text>
+<line x1="130" y1="325.0" x2="1020" y2="325.0" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
+<text x="112" y="332.0" font-size="20" fill="#576875" font-weight="normal" text-anchor="end">2%</text>
 <line x1="130" y1="738" x2="1020" y2="738" stroke="#8796a0" stroke-width="1.5" stroke-dasharray="5 5"/>
 <line x1="130.0" y1="738" x2="130.0" y2="745" stroke="#9aaab5" stroke-width="1" stroke-dasharray=""/>
 <text x="130.0" y="773" font-size="20" fill="#576875" font-weight="normal" text-anchor="middle">1</text>
@@ -42,71 +44,68 @@
 <line x1="1020.0" y1="738" x2="1020.0" y2="745" stroke="#9aaab5" stroke-width="1" stroke-dasharray=""/>
 <text x="1020.0" y="773" font-size="20" fill="#576875" font-weight="normal" text-anchor="middle">10</text>
 <text x="575.0" y="813" font-size="23" fill="#1b2935" font-weight="normal" text-anchor="middle">Number of implementations</text>
-<polyline points="130.00,357.30 228.89,540.50 327.78,490.36 426.67,605.64 525.56,699.13 624.44,669.27 723.33,679.97 822.22,696.63 921.11,714.03 1020.00,725.79" fill="none" stroke="#b84e34" stroke-width="4" stroke-linejoin="round"/>
-<circle cx="130.0" cy="357.30092036899384" r="6" fill="#b84e34" stroke="#f8fafb" stroke-width="2"/>
-<circle cx="228.88888888888889" cy="540.4990755905272" r="6" fill="#b84e34" stroke="#f8fafb" stroke-width="2"/>
-<circle cx="327.77777777777777" cy="490.36234446910674" r="6" fill="#b84e34" stroke="#f8fafb" stroke-width="2"/>
-<circle cx="426.6666666666667" cy="605.6394235442741" r="6" fill="#b84e34" stroke="#f8fafb" stroke-width="2"/>
-<circle cx="525.5555555555555" cy="699.1251436716764" r="6" fill="#b84e34" stroke="#f8fafb" stroke-width="2"/>
-<circle cx="624.4444444444445" cy="669.2708512259658" r="6" fill="#b84e34" stroke="#f8fafb" stroke-width="2"/>
-<circle cx="723.3333333333334" cy="679.9662497147814" r="6" fill="#b84e34" stroke="#f8fafb" stroke-width="2"/>
-<circle cx="822.2222222222222" cy="696.6269760815073" r="6" fill="#b84e34" stroke="#f8fafb" stroke-width="2"/>
-<circle cx="921.1111111111111" cy="714.03366754424" r="6" fill="#b84e34" stroke="#f8fafb" stroke-width="2"/>
-<circle cx="1020.0" cy="725.7895840634849" r="6" fill="#b84e34" stroke="#f8fafb" stroke-width="2"/>
-<line x1="1020" y1="725.7895840634849" x2="1036" y2="725.7895840634849" stroke="#b84e34" stroke-width="1.5" stroke-dasharray=""/>
-<text x="1043" y="732.7895840634849" font-size="21" fill="#b84e34" font-weight="bold" text-anchor="start">0.012%</text>
-<polyline points="130.00,357.30 228.89,304.62 327.78,349.80 426.67,406.13 525.56,363.77 624.44,385.20 723.33,394.34 822.22,395.23 921.11,396.66 1020.00,406.78" fill="none" stroke="#326bb2" stroke-width="4" stroke-linejoin="round"/>
-<circle cx="130.0" cy="357.30092036899384" r="6" fill="#326bb2" stroke="#f8fafb" stroke-width="2"/>
-<circle cx="228.88888888888889" cy="304.6186702016628" r="6" fill="#326bb2" stroke="#f8fafb" stroke-width="2"/>
-<circle cx="327.77777777777777" cy="349.7986004137105" r="6" fill="#326bb2" stroke="#f8fafb" stroke-width="2"/>
-<circle cx="426.6666666666667" cy="406.1273478452489" r="6" fill="#326bb2" stroke="#f8fafb" stroke-width="2"/>
-<circle cx="525.5555555555555" cy="363.77001196497685" r="6" fill="#326bb2" stroke="#f8fafb" stroke-width="2"/>
-<circle cx="624.4444444444445" cy="385.1996083786195" r="6" fill="#326bb2" stroke="#f8fafb" stroke-width="2"/>
-<circle cx="723.3333333333334" cy="394.34050745344695" r="6" fill="#326bb2" stroke="#f8fafb" stroke-width="2"/>
-<circle cx="822.2222222222222" cy="395.2280825479239" r="6" fill="#326bb2" stroke="#f8fafb" stroke-width="2"/>
-<circle cx="921.1111111111111" cy="396.65683994796626" r="6" fill="#326bb2" stroke="#f8fafb" stroke-width="2"/>
-<circle cx="1020.0" cy="406.7775942954825" r="6" fill="#326bb2" stroke="#f8fafb" stroke-width="2"/>
-<line x1="1020" y1="406.7775942954825" x2="1036" y2="406.7775942954825" stroke="#326bb2" stroke-width="1.5" stroke-dasharray=""/>
-<text x="1043" y="413.7775942954825" font-size="21" fill="#326bb2" font-weight="bold" text-anchor="start">0.550%</text>
-<circle cx="130.0" cy="357.30092036899384" r="8" fill="#b84e34" stroke="#f8fafb" stroke-width="2"/>
-<circle cx="130.0" cy="357.30092036899384" r="4" fill="#326bb2" stroke="#f8fafb" stroke-width="2"/>
+<polyline points="130.00,379.03 228.89,551.77 327.78,504.50 426.67,613.19 525.56,701.34 624.44,668.82 723.33,707.91 822.22,729.19 921.11,717.31 1020.00,726.49" fill="none" stroke="#b84e34" stroke-width="4" stroke-linejoin="round"/>
+<circle cx="130.0" cy="379.03031989131154" r="6" fill="#b84e34" stroke="#f8fafb" stroke-width="2"/>
+<circle cx="228.88888888888889" cy="551.7719594038533" r="6" fill="#b84e34" stroke="#f8fafb" stroke-width="2"/>
+<circle cx="327.77777777777777" cy="504.4969138487239" r="6" fill="#b84e34" stroke="#f8fafb" stroke-width="2"/>
+<circle cx="426.6666666666667" cy="613.1942509675462" r="6" fill="#b84e34" stroke="#f8fafb" stroke-width="2"/>
+<circle cx="525.5555555555555" cy="701.3440281653021" r="6" fill="#b84e34" stroke="#f8fafb" stroke-width="2"/>
+<circle cx="624.4444444444445" cy="668.8238161596464" r="6" fill="#b84e34" stroke="#f8fafb" stroke-width="2"/>
+<circle cx="723.3333333333334" cy="707.9082697532165" r="6" fill="#b84e34" stroke="#f8fafb" stroke-width="2"/>
+<circle cx="822.2222222222222" cy="729.1925398868668" r="6" fill="#b84e34" stroke="#f8fafb" stroke-width="2"/>
+<circle cx="921.1111111111111" cy="717.3148086545415" r="6" fill="#b84e34" stroke="#f8fafb" stroke-width="2"/>
+<circle cx="1020.0" cy="726.4865256123728" r="6" fill="#b84e34" stroke="#f8fafb" stroke-width="2"/>
+<line x1="1020" y1="726.4865256123728" x2="1036" y2="726.4865256123728" stroke="#b84e34" stroke-width="1.5" stroke-dasharray=""/>
+<text x="1043" y="733.4865256123728" font-size="21" fill="#b84e34" font-weight="bold" text-anchor="start">0.012%</text>
+<polyline points="130.00,379.03 228.89,329.36 327.78,371.96 426.67,425.07 525.56,385.13 624.44,414.55 723.33,441.38 822.22,397.87 921.11,407.91 1020.00,425.68" fill="none" stroke="#326bb2" stroke-width="4" stroke-linejoin="round"/>
+<circle cx="130.0" cy="379.03031989131154" r="6" fill="#326bb2" stroke="#f8fafb" stroke-width="2"/>
+<circle cx="228.88888888888889" cy="329.35504747325734" r="6" fill="#326bb2" stroke="#f8fafb" stroke-width="2"/>
+<circle cx="327.77777777777777" cy="371.956214545348" r="6" fill="#326bb2" stroke="#f8fafb" stroke-width="2"/>
+<circle cx="426.6666666666667" cy="425.06985082211827" r="6" fill="#326bb2" stroke="#f8fafb" stroke-width="2"/>
+<circle cx="525.5555555555555" cy="385.13017109939597" r="6" fill="#326bb2" stroke="#f8fafb" stroke-width="2"/>
+<circle cx="624.4444444444445" cy="414.5516830142249" r="6" fill="#326bb2" stroke="#f8fafb" stroke-width="2"/>
+<circle cx="723.3333333333334" cy="441.37851422112095" r="6" fill="#326bb2" stroke="#f8fafb" stroke-width="2"/>
+<circle cx="822.2222222222222" cy="397.866572850156" r="6" fill="#326bb2" stroke="#f8fafb" stroke-width="2"/>
+<circle cx="921.1111111111111" cy="407.9130788242972" r="6" fill="#326bb2" stroke="#f8fafb" stroke-width="2"/>
+<circle cx="1020.0" cy="425.6829827489367" r="6" fill="#326bb2" stroke="#f8fafb" stroke-width="2"/>
+<line x1="1020" y1="425.6829827489367" x2="1036" y2="425.6829827489367" stroke="#326bb2" stroke-width="1.5" stroke-dasharray=""/>
+<text x="1043" y="432.6829827489367" font-size="21" fill="#326bb2" font-weight="bold" text-anchor="start">0.550%</text>
+<polyline points="130.00,379.03 228.89,379.02 327.78,475.54 426.67,472.42 525.56,548.62 624.44,535.96 723.33,588.39 822.22,569.24 921.11,604.36 1020.00,583.20" fill="none" stroke="#a96b08" stroke-width="4" stroke-linejoin="round"/>
+<circle cx="130.0" cy="379.03031989131154" r="6" fill="#a96b08" stroke="#f8fafb" stroke-width="2"/>
+<circle cx="228.88888888888889" cy="379.01630777627867" r="6" fill="#a96b08" stroke="#f8fafb" stroke-width="2"/>
+<circle cx="327.77777777777777" cy="475.5412048006713" r="6" fill="#a96b08" stroke="#f8fafb" stroke-width="2"/>
+<circle cx="426.6666666666667" cy="472.41783308646205" r="6" fill="#a96b08" stroke="#f8fafb" stroke-width="2"/>
+<circle cx="525.5555555555555" cy="548.6208178877151" r="6" fill="#a96b08" stroke="#f8fafb" stroke-width="2"/>
+<circle cx="624.4444444444445" cy="535.9616279019625" r="6" fill="#a96b08" stroke="#f8fafb" stroke-width="2"/>
+<circle cx="723.3333333333334" cy="588.3875950433994" r="6" fill="#a96b08" stroke="#f8fafb" stroke-width="2"/>
+<circle cx="822.2222222222222" cy="569.2361430824072" r="6" fill="#a96b08" stroke="#f8fafb" stroke-width="2"/>
+<circle cx="921.1111111111111" cy="604.360949932441" r="6" fill="#a96b08" stroke="#f8fafb" stroke-width="2"/>
+<circle cx="1020.0" cy="583.2039235567701" r="6" fill="#a96b08" stroke="#f8fafb" stroke-width="2"/>
+<line x1="1020" y1="583.2039235567701" x2="1036" y2="583.2039235567701" stroke="#a96b08" stroke-width="1.5" stroke-dasharray=""/>
+<text x="1043" y="590.2039235567701" font-size="21" fill="#a96b08" font-weight="bold" text-anchor="start">0.073%</text>
+<circle cx="130.0" cy="379.03031989131154" r="10" fill="#b84e34" stroke="#f8fafb" stroke-width="2"/>
+<circle cx="130.0" cy="379.03031989131154" r="7" fill="#a96b08" stroke="#f8fafb" stroke-width="2"/>
+<circle cx="130.0" cy="379.03031989131154" r="3" fill="#326bb2" stroke="#f8fafb" stroke-width="2"/>
 <rect x="1174" y="192" width="454" height="636" rx="18" fill="#edf2f5"/>
-<text x="1204" y="235" font-size="20" fill="#576875" font-weight="bold" text-anchor="start">BALANCED NODE ALLOCATIONS</text>
-<text x="1204" y="274" font-size="18" fill="#576875" font-weight="normal" text-anchor="start">Impls</text>
-<text x="1300" y="274" font-size="18" fill="#576875" font-weight="normal" text-anchor="start">Nodes per codebase</text>
-<text x="1226" y="315" font-size="22" fill="#1b2935" font-weight="bold" text-anchor="middle">1</text>
-<text x="1300" y="315" font-size="21" fill="#1b2935" font-weight="normal" text-anchor="start">10</text>
-<line x1="1204" y1="330" x2="1598" y2="330" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
-<text x="1226" y="359" font-size="22" fill="#1b2935" font-weight="bold" text-anchor="middle">2</text>
-<text x="1300" y="359" font-size="21" fill="#1b2935" font-weight="normal" text-anchor="start">5+5</text>
-<line x1="1204" y1="374" x2="1598" y2="374" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
-<text x="1226" y="403" font-size="22" fill="#1b2935" font-weight="bold" text-anchor="middle">3</text>
-<text x="1300" y="403" font-size="21" fill="#1b2935" font-weight="normal" text-anchor="start">4+3+3</text>
-<line x1="1204" y1="418" x2="1598" y2="418" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
-<text x="1226" y="447" font-size="22" fill="#1b2935" font-weight="bold" text-anchor="middle">4</text>
-<text x="1300" y="447" font-size="21" fill="#1b2935" font-weight="normal" text-anchor="start">3+3+2+2</text>
-<line x1="1204" y1="462" x2="1598" y2="462" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
-<text x="1226" y="491" font-size="22" fill="#1b2935" font-weight="bold" text-anchor="middle">5</text>
-<text x="1300" y="491" font-size="21" fill="#1b2935" font-weight="normal" text-anchor="start">2+2+2+2+2</text>
-<line x1="1204" y1="506" x2="1598" y2="506" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
-<text x="1226" y="535" font-size="22" fill="#1b2935" font-weight="bold" text-anchor="middle">6</text>
-<text x="1300" y="535" font-size="21" fill="#1b2935" font-weight="normal" text-anchor="start">2+2+2+2+1+1</text>
-<line x1="1204" y1="550" x2="1598" y2="550" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
-<text x="1226" y="579" font-size="22" fill="#1b2935" font-weight="bold" text-anchor="middle">7</text>
-<text x="1300" y="579" font-size="21" fill="#1b2935" font-weight="normal" text-anchor="start">2+2+2+1+1+1+1</text>
-<line x1="1204" y1="594" x2="1598" y2="594" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
-<text x="1226" y="623" font-size="22" fill="#1b2935" font-weight="bold" text-anchor="middle">8</text>
-<text x="1300" y="623" font-size="21" fill="#1b2935" font-weight="normal" text-anchor="start">2+2+1+1+1+1+1+1</text>
-<line x1="1204" y1="638" x2="1598" y2="638" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
-<text x="1226" y="667" font-size="22" fill="#1b2935" font-weight="bold" text-anchor="middle">9</text>
-<text x="1300" y="667" font-size="21" fill="#1b2935" font-weight="normal" text-anchor="start">2+1+1+1+1+1+1+1+1</text>
-<line x1="1204" y1="682" x2="1598" y2="682" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
-<text x="1226" y="711" font-size="22" fill="#1b2935" font-weight="bold" text-anchor="middle">10</text>
-<text x="1300" y="711" font-size="21" fill="#1b2935" font-weight="normal" text-anchor="start">1+1+1+1+1+1+1+1+1+1</text>
-<text x="1204" y="792" font-size="19" fill="#576875" font-weight="normal" text-anchor="start">Same 10 nodes at every point.</text>
+<text x="1204" y="235" font-size="20" fill="#576875" font-weight="bold" text-anchor="start">THRESHOLDS IN THIS MODEL</text>
+<text x="1204" y="290" font-size="23" fill="#b84e34" font-weight="bold" text-anchor="start">Federation fund safety</text>
+<text x="1204" y="326" font-size="23" fill="#1b2935" font-weight="normal" text-anchor="start">≈ ⅔ of keys compromised</text>
+<text x="1204" y="359" font-size="19" fill="#576875" font-weight="normal" text-anchor="start">Unauthorized signing</text>
+<line x1="1204" y1="387" x2="1598" y2="387" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
+<text x="1204" y="428" font-size="23" fill="#326bb2" font-weight="bold" text-anchor="start">Federation liveness</text>
+<text x="1204" y="464" font-size="23" fill="#1b2935" font-weight="normal" text-anchor="start">≈ ⅓ of nodes stalled</text>
+<text x="1204" y="497" font-size="19" fill="#576875" font-weight="normal" text-anchor="start">Not enough nodes for a quorum</text>
+<line x1="1204" y1="525" x2="1598" y2="525" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
+<text x="1204" y="566" font-size="23" fill="#a96b08" font-weight="bold" text-anchor="start">Bitcoin reference</text>
+<text x="1204" y="602" font-size="23" fill="#1b2935" font-weight="normal" text-anchor="start">&gt; ½ of hashpower controlled</text>
+<text x="1204" y="635" font-size="19" fill="#576875" font-weight="normal" text-anchor="start">Majority control—not key theft</text>
+<line x1="1204" y1="663" x2="1598" y2="663" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
+<text x="1204" y="710" font-size="20" fill="#576875" font-weight="normal" text-anchor="start">Near-equal weight per codebase.</text>
+<text x="1204" y="744" font-size="20" fill="#576875" font-weight="normal" text-anchor="start">3,000,001 units; exact thresholds.</text>
+<text x="1204" y="778" font-size="20" fill="#576875" font-weight="normal" text-anchor="start">Total effort split equally.</text>
 <rect x="72" y="852" width="1556" height="76" rx="14" fill="#e4f1ed"/>
 <text x="101" y="901" font-size="30" fill="#075e50" font-weight="bold" text-anchor="start">The quorum and allocation matter—not just implementation count.</text>
 <text x="72" y="964" font-size="20" fill="#576875" font-weight="normal" text-anchor="start">Toy probabilities, not estimates. Common-failure floor: 0.01%; shared-exposure correlation retained.</text>
-<text x="72" y="995" font-size="20" fill="#576875" font-weight="normal" text-anchor="start">Finite effort, not the infinite-effort limit. Liveness assumes stalled nodes; interoperability and startup costs excluded.</text>
+<text x="72" y="995" font-size="20" fill="#576875" font-weight="normal" text-anchor="start">Bitcoin is a majority-hashpower reference, not a theft estimate. Liveness assumes stalled nodes; build costs excluded.</text>
 </g>
 </svg>

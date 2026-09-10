@@ -1,6 +1,6 @@
 # Threshold Illustrations
 
-Illustrative models of how implementation diversity affects **signing safety** and **consensus liveness** in a **7-of-10 federation**, comparing one, two, and four codebases under the same total hardening budget.
+Illustrative models of how implementation diversity affects **signing safety** and **consensus liveness** in a **7-of-10 federation**, comparing hardening effort for one, two, and four codebases, plus a fixed-high-effort comparison across one to ten codebases.
 
 **These are hypothetical probabilities, not security or reliability estimates for Fedimint or any deployed system.**
 
@@ -30,6 +30,14 @@ The liveness model assumes bugs stall nodes or make them refuse to vote. Four un
 
 [SVG](consensus-liveness.svg) · [Data](consensus-liveness.csv) · [Model and limitations](consensus-liveness-model.md) · [Generator](consensus_liveness.py)
 
+## Implementation count at high effort
+
+![Safety and liveness vs. implementation count](implementation-count.png)
+
+A fixed **20-unit total hardening budget** is divided across **1–10 implementations**, with ten nodes allocated as evenly as possible. Both curves show failure probabilities; lower is better. The vertical axis is logarithmic. This uses the existing charts' high-effort endpoint, not infinite effort.
+
+[SVG](implementation-count.svg) · [Data](implementation-count.csv) · [Model and limitations](implementation-count-model.md) · [Generator](implementation_count.py)
+
 ## Shared assumptions
 
 - Total hardening effort is divided equally across codebases, with diminishing returns.
@@ -49,9 +57,11 @@ Requirements: Python 3 (standard library only) and ImageMagick with SVG renderin
 ```sh
 python3 threshold_diversity.py
 python3 consensus_liveness.py
+python3 implementation_count.py
 
 magick -background '#f8fafb' threshold-diversity.svg threshold-diversity.png
 magick -background '#f8fafb' consensus-liveness.svg consensus-liveness.png
+magick -background '#f8fafb' implementation-count.svg implementation-count.png
 ```
 
-Each Python script checks exhaustive failure-state enumeration against closed-form probabilities, validates model invariants, and writes its SVG and CSV alongside itself. PNG appearance can vary with renderer and installed fonts; the SVG requests DejaVu Sans.
+Each Python script checks exhaustive failure-state enumeration against closed-form probabilities or an independent convolution, validates model invariants, and writes its SVG and CSV alongside itself. The implementation-count generator also checks agreement with the companion CSVs at total effort E=20. PNG appearance can vary with renderer and installed fonts; the SVG requests DejaVu Sans.

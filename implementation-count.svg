@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1700" height="1020" viewBox="0 0 1700 1020">
 <rect width="1700" height="1020" fill="#f8fafb"/>
 <g font-family="DejaVu Sans, sans-serif">
-<text x="72" y="93" font-size="47" fill="#1b2935" font-weight="bold" text-anchor="start">Safety &amp; Liveness vs. Implementation Count</text>
-<text x="72" y="140" font-size="23" fill="#576875" font-weight="normal" text-anchor="start">Large federation: n = 3f + 1, quorum = 2f + 1 ≈ ⅔ · fixed total effort: 20 units.</text>
-<text x="130" y="211" font-size="24" fill="#1b2935" font-weight="bold" text-anchor="start">Failure probability · log scale · lower is better</text>
+<text x="72" y="93" font-size="47" fill="#1b2935" font-weight="bold" text-anchor="start">Implementation Diversity: Safety &amp; Liveness</text>
+<text x="72" y="140" font-size="23" fill="#576875" font-weight="normal" text-anchor="start">Large federation: quorum ≈ ⅔ · Bitcoin: user impact when implementations disagree.</text>
+<text x="130" y="211" font-size="24" fill="#1b2935" font-weight="bold" text-anchor="start">Federation failure probability · log scale</text>
 <line x1="130" y1="250" x2="165" y2="250" stroke="#b84e34" stroke-width="4" stroke-dasharray=""/>
 <text x="180" y="257" font-size="20" fill="#b84e34" font-weight="normal" text-anchor="start">Federation: fund safety</text>
 <line x1="130" y1="285" x2="165" y2="285" stroke="#326bb2" stroke-width="4" stroke-dasharray=""/>
 <text x="180" y="292" font-size="20" fill="#326bb2" font-weight="normal" text-anchor="start">Federation: liveness</text>
-<line x1="640" y1="250" x2="675" y2="250" stroke="#a96b08" stroke-width="4" stroke-dasharray=""/>
-<text x="690" y="257" font-size="20" fill="#a96b08" font-weight="normal" text-anchor="start">Bitcoin: &gt;50% hashpower</text>
+<text x="640" y="257" font-size="20" fill="#576875" font-weight="normal" text-anchor="start">Fixed total effort: 20 units</text>
+<text x="640" y="292" font-size="20" fill="#576875" font-weight="normal" text-anchor="start">Near-equal node shares</text>
 <line x1="130" y1="738.0" x2="1020" y2="738.0" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
 <text x="112" y="745.0" font-size="20" fill="#576875" font-weight="normal" text-anchor="end">0.01%</text>
 <line x1="130" y1="652.363968061894" x2="1020" y2="652.363968061894" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
@@ -70,42 +70,48 @@
 <circle cx="1020.0" cy="425.6829827489367" r="6" fill="#326bb2" stroke="#f8fafb" stroke-width="2"/>
 <line x1="1020" y1="425.6829827489367" x2="1036" y2="425.6829827489367" stroke="#326bb2" stroke-width="1.5" stroke-dasharray=""/>
 <text x="1043" y="432.6829827489367" font-size="21" fill="#326bb2" font-weight="bold" text-anchor="start">0.550%</text>
-<polyline points="130.00,379.03 228.89,379.02 327.78,475.54 426.67,472.42 525.56,548.62 624.44,535.96 723.33,588.39 822.22,569.24 921.11,604.36 1020.00,583.20" fill="none" stroke="#a96b08" stroke-width="4" stroke-linejoin="round"/>
-<circle cx="130.0" cy="379.03031989131154" r="6" fill="#a96b08" stroke="#f8fafb" stroke-width="2"/>
-<circle cx="228.88888888888889" cy="379.01630777627867" r="6" fill="#a96b08" stroke="#f8fafb" stroke-width="2"/>
-<circle cx="327.77777777777777" cy="475.5412048006713" r="6" fill="#a96b08" stroke="#f8fafb" stroke-width="2"/>
-<circle cx="426.6666666666667" cy="472.41783308646205" r="6" fill="#a96b08" stroke="#f8fafb" stroke-width="2"/>
-<circle cx="525.5555555555555" cy="548.6208178877151" r="6" fill="#a96b08" stroke="#f8fafb" stroke-width="2"/>
-<circle cx="624.4444444444445" cy="535.9616279019625" r="6" fill="#a96b08" stroke="#f8fafb" stroke-width="2"/>
-<circle cx="723.3333333333334" cy="588.3875950433994" r="6" fill="#a96b08" stroke="#f8fafb" stroke-width="2"/>
-<circle cx="822.2222222222222" cy="569.2361430824072" r="6" fill="#a96b08" stroke="#f8fafb" stroke-width="2"/>
-<circle cx="921.1111111111111" cy="604.360949932441" r="6" fill="#a96b08" stroke="#f8fafb" stroke-width="2"/>
-<circle cx="1020.0" cy="583.2039235567701" r="6" fill="#a96b08" stroke="#f8fafb" stroke-width="2"/>
-<line x1="1020" y1="583.2039235567701" x2="1036" y2="583.2039235567701" stroke="#a96b08" stroke-width="1.5" stroke-dasharray=""/>
-<text x="1043" y="590.2039235567701" font-size="21" fill="#a96b08" font-weight="bold" text-anchor="start">0.073%</text>
-<circle cx="130.0" cy="379.03031989131154" r="10" fill="#b84e34" stroke="#f8fafb" stroke-width="2"/>
-<circle cx="130.0" cy="379.03031989131154" r="7" fill="#a96b08" stroke="#f8fafb" stroke-width="2"/>
-<circle cx="130.0" cy="379.03031989131154" r="3" fill="#326bb2" stroke="#f8fafb" stroke-width="2"/>
+<circle cx="130.0" cy="379.03031989131154" r="8" fill="#b84e34" stroke="#f8fafb" stroke-width="2"/>
+<circle cx="130.0" cy="379.03031989131154" r="4" fill="#326bb2" stroke="#f8fafb" stroke-width="2"/>
 <rect x="1174" y="192" width="454" height="636" rx="18" fill="#edf2f5"/>
-<text x="1204" y="235" font-size="20" fill="#576875" font-weight="bold" text-anchor="start">THRESHOLDS IN THIS MODEL</text>
-<text x="1204" y="290" font-size="23" fill="#b84e34" font-weight="bold" text-anchor="start">Federation fund safety</text>
-<text x="1204" y="326" font-size="23" fill="#1b2935" font-weight="normal" text-anchor="start">≈ ⅔ of keys compromised</text>
-<text x="1204" y="359" font-size="19" fill="#576875" font-weight="normal" text-anchor="start">Unauthorized signing</text>
-<line x1="1204" y1="387" x2="1598" y2="387" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
-<text x="1204" y="428" font-size="23" fill="#326bb2" font-weight="bold" text-anchor="start">Federation liveness</text>
-<text x="1204" y="464" font-size="23" fill="#1b2935" font-weight="normal" text-anchor="start">≈ ⅓ of nodes stalled</text>
-<text x="1204" y="497" font-size="19" fill="#576875" font-weight="normal" text-anchor="start">Not enough nodes for a quorum</text>
-<line x1="1204" y1="525" x2="1598" y2="525" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
-<text x="1204" y="566" font-size="23" fill="#a96b08" font-weight="bold" text-anchor="start">Bitcoin reference</text>
-<text x="1204" y="602" font-size="23" fill="#1b2935" font-weight="normal" text-anchor="start">&gt; ½ of hashpower controlled</text>
-<text x="1204" y="635" font-size="19" fill="#576875" font-weight="normal" text-anchor="start">Majority control—not key theft</text>
-<line x1="1204" y1="663" x2="1598" y2="663" stroke="#dce3e8" stroke-width="1" stroke-dasharray=""/>
-<text x="1204" y="710" font-size="20" fill="#576875" font-weight="normal" text-anchor="start">Near-equal weight per codebase.</text>
-<text x="1204" y="744" font-size="20" fill="#576875" font-weight="normal" text-anchor="start">3,000,001 units; exact thresholds.</text>
-<text x="1204" y="778" font-size="20" fill="#576875" font-weight="normal" text-anchor="start">Total effort split equally.</text>
+<text x="1204" y="235" font-size="26" fill="#1b2935" font-weight="bold" text-anchor="start">Bitcoin: affected users</text>
+<text x="1204" y="267" font-size="18" fill="#576875" font-weight="normal" text-anchor="start">Conditional impact—not bug probability</text>
+<line x1="1204" y1="302" x2="1236" y2="302" stroke="#a96b08" stroke-width="4" stroke-dasharray=""/>
+<text x="1248" y="309" font-size="18" fill="#a96b08" font-weight="normal" text-anchor="start">A rejects the dominant chain</text>
+<line x1="1204" y1="332" x2="1236" y2="332" stroke="#7953a6" stroke-width="4" stroke-dasharray="6 4"/>
+<text x="1248" y="339" font-size="18" fill="#7953a6" font-weight="normal" text-anchor="start">B rejects the dominant chain</text>
+<text x="1204" y="382" font-size="18" fill="#576875" font-weight="normal" text-anchor="start">Users unable to follow that chain (%)</text>
+<line x1="1250" y1="625" x2="1584" y2="625" stroke="#d5dfe5" stroke-width="1" stroke-dasharray=""/>
+<text x="1236" y="631" font-size="17" fill="#576875" font-weight="normal" text-anchor="end">0</text>
+<line x1="1250" y1="625" x2="1250" y2="631" stroke="#8796a0" stroke-width="1" stroke-dasharray=""/>
+<text x="1250" y="654" font-size="17" fill="#576875" font-weight="normal" text-anchor="middle">0</text>
+<line x1="1250" y1="583.2" x2="1584" y2="583.2" stroke="#d5dfe5" stroke-width="1" stroke-dasharray=""/>
+<text x="1236" y="589.2" font-size="17" fill="#576875" font-weight="normal" text-anchor="end">20</text>
+<line x1="1316.8" y1="625" x2="1316.8" y2="631" stroke="#8796a0" stroke-width="1" stroke-dasharray=""/>
+<text x="1316.8" y="654" font-size="17" fill="#576875" font-weight="normal" text-anchor="middle">20</text>
+<line x1="1250" y1="520.5" x2="1584" y2="520.5" stroke="#d5dfe5" stroke-width="1" stroke-dasharray=""/>
+<text x="1236" y="526.5" font-size="17" fill="#576875" font-weight="normal" text-anchor="end">50</text>
+<line x1="1417.0" y1="625" x2="1417.0" y2="631" stroke="#8796a0" stroke-width="1" stroke-dasharray=""/>
+<text x="1417.0" y="654" font-size="17" fill="#576875" font-weight="normal" text-anchor="middle">50</text>
+<line x1="1250" y1="457.79999999999995" x2="1584" y2="457.79999999999995" stroke="#d5dfe5" stroke-width="1" stroke-dasharray=""/>
+<text x="1236" y="463.79999999999995" font-size="17" fill="#576875" font-weight="normal" text-anchor="end">80</text>
+<line x1="1517.2" y1="625" x2="1517.2" y2="631" stroke="#8796a0" stroke-width="1" stroke-dasharray=""/>
+<text x="1517.2" y="654" font-size="17" fill="#576875" font-weight="normal" text-anchor="middle">80</text>
+<line x1="1250" y1="416" x2="1584" y2="416" stroke="#d5dfe5" stroke-width="1" stroke-dasharray=""/>
+<text x="1236" y="422" font-size="17" fill="#576875" font-weight="normal" text-anchor="end">100</text>
+<line x1="1584" y1="625" x2="1584" y2="631" stroke="#8796a0" stroke-width="1" stroke-dasharray=""/>
+<text x="1584" y="654" font-size="17" fill="#576875" font-weight="normal" text-anchor="middle">100</text>
+<line x1="1250" y1="625" x2="1584" y2="416" stroke="#a96b08" stroke-width="3.5" stroke-dasharray=""/>
+<line x1="1250" y1="416" x2="1584" y2="625" stroke="#7953a6" stroke-width="3.5" stroke-dasharray="7 5"/>
+<line x1="1316.8" y1="625" x2="1316.8" y2="457.79999999999995" stroke="#8796a0" stroke-width="1.2" stroke-dasharray="4 4"/>
+<circle cx="1316.8" cy="583.2" r="6" fill="#a96b08" stroke="#f8fafb" stroke-width="2"/>
+<circle cx="1316.8" cy="457.79999999999995" r="6" fill="#7953a6" stroke="#f8fafb" stroke-width="2"/>
+<text x="1417.0" y="690" font-size="18" fill="#1b2935" font-weight="normal" text-anchor="middle">Users on implementation A (%)</text>
+<text x="1204" y="735" font-size="22" fill="#1b2935" font-weight="bold" text-anchor="start">20% use A · 80% use B</text>
+<text x="1204" y="769" font-size="21" fill="#a96b08" font-weight="normal" text-anchor="start">A rejects → 20% affected</text>
+<text x="1204" y="802" font-size="21" fill="#7953a6" font-weight="normal" text-anchor="start">B rejects → 80% affected</text>
 <rect x="72" y="852" width="1556" height="76" rx="14" fill="#e4f1ed"/>
-<text x="101" y="901" font-size="30" fill="#075e50" font-weight="bold" text-anchor="start">The quorum and allocation matter—not just implementation count.</text>
-<text x="72" y="964" font-size="20" fill="#576875" font-weight="normal" text-anchor="start">Toy probabilities, not estimates. Common-failure floor: 0.01%; shared-exposure correlation retained.</text>
-<text x="72" y="995" font-size="20" fill="#576875" font-weight="normal" text-anchor="start">Bitcoin is a majority-hashpower reference, not a theft estimate. Liveness assumes stalled nodes; build costs excluded.</text>
+<text x="101" y="901" font-size="30" fill="#075e50" font-weight="bold" text-anchor="start">Network progress does not guarantee progress for every user.</text>
+<text x="72" y="964" font-size="20" fill="#576875" font-weight="normal" text-anchor="start">Federation: toy probabilities; common-failure floor 0.01%, shared exposure retained. Bitcoin: impact given disagreement.</text>
+<text x="72" y="995" font-size="20" fill="#576875" font-weight="normal" text-anchor="start">User share does not choose the dominant chain. A rejecting group may follow a separate fork rather than stop entirely.</text>
 </g>
 </svg>

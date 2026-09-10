@@ -1,6 +1,6 @@
 # Threshold Illustrations
 
-Illustrative models of how implementation diversity affects **signing safety** and **consensus liveness**: two hardening-effort charts for a **7-of-10 federation**, plus a **large-federation** implementation-count comparison with a Bitcoin majority-hashpower reference.
+Illustrative models of how implementation diversity affects **signing safety** and **consensus liveness**: two hardening-effort charts for a **7-of-10 federation**, plus a **large-federation** implementation-count comparison alongside a continuous Bitcoin affected-user panel.
 
 **These are hypothetical probabilities, not security or reliability estimates for Fedimint or any deployed system.**
 
@@ -30,15 +30,17 @@ The liveness model assumes bugs stall nodes or make them refuse to vote. Four un
 
 [SVG](consensus-liveness.svg) · [Data](consensus-liveness.csv) · [Model and limitations](consensus-liveness-model.md) · [Generator](consensus_liveness.py)
 
-## Implementation count at high effort
+## Implementation count and affected users
 
 ![Safety and liveness vs. implementation count](implementation-count.png)
 
-A fixed **20-unit total hardening budget** is divided across **1–10 implementations** in a large federation: **n = 3f+1**, **quorum = 2f+1 ≈ ⅔**, with f = 1,000,000 and near-equal codebase shares. A third line shows a **Bitcoin-style >50% hashpower-control reference**, not key theft or actual Bitcoin attack probability. All three curves use the same toy risk parameters and a logarithmic vertical axis. This is finite high effort, not infinite effort; exact integer thresholds are retained.
+The **left panel** divides a fixed **20-unit total hardening budget** across **1–10 implementations** in a large federation: **n = 3f+1**, **quorum = 2f+1 ≈ ⅔**, with f = 1,000,000 and near-equal node shares. Its logarithmic axis shows hypothetical failure probabilities.
 
-[SVG](implementation-count.svg) · [Data](implementation-count.csv) · [Model and limitations](implementation-count-model.md) · [Generator](implementation_count.py)
+The **right panel** uses a continuous **Bitcoin user split** between implementations A and B. It shows the share unable to follow the dominant chain **if A or B rejects it**, not the probability of a bug. For a **20/80 split**, rejection by A affects **20%** of users; rejection by B affects **80%**. User share is not hashpower and does not determine which chain progresses.
 
-## Shared assumptions
+[SVG](implementation-count.svg) · [Federation data](implementation-count.csv) · [Bitcoin user-impact data](bitcoin-user-impact.csv) · [Model and limitations](implementation-count-model.md) · [Generator](implementation_count.py)
+
+## Shared federation probability assumptions
 
 - Total hardening effort is divided equally across codebases, with diminishing returns.
 - Each model's single-implementation risk approaches **1%**.
@@ -48,7 +50,7 @@ A fixed **20-unit total hardening budget** is divided across **1–10 implementa
 - Thus these are **not** models of unconditionally independent 1% implementation failures.
 - Implementation startup costs, unequal codebase quality and interoperability regressions are excluded. The liveness chart models quorum loss, not every consensus bug or outage duration.
 
-The identical parameters make threshold effects easier to compare; they do not imply that real safety, liveness and Bitcoin mining bug rates are equal. See the model notes for formulas and limitations.
+The identical parameters make threshold effects easier to compare; they do not imply that real safety and liveness bug rates are equal. The Bitcoin panel instead shows conditional user impact and does not use these probability parameters. See the model notes for formulas and limitations.
 
 ## Regenerate
 
@@ -64,4 +66,4 @@ magick -background '#f8fafb' consensus-liveness.svg consensus-liveness.png
 magick -background '#f8fafb' implementation-count.svg implementation-count.png
 ```
 
-Each Python script checks exhaustive failure-state enumeration against closed-form probabilities or an independent convolution, validates model invariants, and writes its SVG and CSV alongside itself. The implementation-count generator also checks the unchanged one-, two-, and four-implementation federation cases against the companion CSVs at total effort E=20. PNG appearance can vary with renderer and installed fonts; the SVG requests DejaVu Sans.
+Each Python script checks exhaustive failure-state enumeration against closed-form probabilities or an independent convolution, validates model invariants, and writes its SVG and CSV alongside itself. The implementation-count generator also checks the unchanged one-, two-, and four-implementation federation cases against the companion CSVs at total effort E=20, and validates the continuous Bitcoin user-impact functions. PNG appearance can vary with renderer and installed fonts; the SVG requests DejaVu Sans.
